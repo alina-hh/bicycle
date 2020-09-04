@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <!-- <div style="display:none">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div> -->
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-logo"><path d="M13.364 0v20.046H10.07V5.822L8.973 7.207 6.825 9.975l-.095.095-.144-.095L4.44 7.207l-1.1-1.432v14.27H0V0h3.34l3.39 4.295L10.07 0h3.294zm-5.06 10.07l-.095-.095.095.095z" fill="#0AD9C6"></path><path d="M8.448 9.975l-.096.095h-.047l.143-.095zm29.762-4.36l-9.128 6.701 2.113 2.878 9.127-6.701-2.113-2.878z" fill="#0AD9C6"></path><path d="M26.667 3c-3.864 0-7.043 3.13-7.043 7.043 0 3.864 3.13 7.043 7.043 7.043 3.864 0 7.044-3.13 7.044-7.043C33.71 6.18 30.53 3 26.667 3zm0 10.271a3.225 3.225 0 01-3.228-3.228 3.225 3.225 0 013.228-3.228c1.761 0 3.228 1.467 3.228 3.228 0 1.76-1.467 3.228-3.228 3.228zM43.64 3c-3.864 0-7.044 3.13-7.044 7.043 0 3.864 3.13 7.043 7.044 7.043 3.864 0 7.043-3.13 7.043-7.043C50.633 6.18 47.503 3 43.64 3zm0 10.271a3.225 3.225 0 01-3.229-3.228 3.225 3.225 0 013.229-3.228c1.76 0 3.228 1.467 3.228 3.228 0 1.76-1.468 3.228-3.228 3.228zM67.598.239v20.045h-3.341V9.88L61.44 7.207l-2.1-2.052v15.13H56V.238h3.341l3.913 3.77 1.003.955V.239h3.34z" fill="#0AD9C6"></path><path fill="#0AD9C6" d="M37 3h6v4h-6z"></path></symbol></svg>
+  </div>
 
   <header class="header">
     <div class="header__wrapper">
@@ -79,7 +79,8 @@
   </section>
 
   <section class="types-of-bisycles">
-    <div class="types-of-bicycles">
+    <div class="types-of-bicycles__wrapper">
+      <h2 class="types-of-bicycles__caption">Виды велосипедов</h2>
       <ul class="types-of-bisycles__list">
         <li class="types-of-bisycles__item">
           <picture>
@@ -89,7 +90,7 @@
             <source media="(max-width: 768px)" srcset="img/tablet-type-road.jpg 1x, img/tablet--type-road@2x.jpg 2x">
             <img class="types-of-bisycles__img" src="img/desktop-type-road.jpg" srcset="img/desktop-type-road@2x.jpg 2x" alt="Фото дорожного велосипеда" width="342" height="503">
           </picture>
-          <h3 class="types-of-bisycles__caption">Дорожный велосипед</h3>
+          <h3 class="types-of-bisycles__subcaption">Дорожный велосипед</h3>
         </li>
         <li class="types-of-bisycles__item">
           <picture>
@@ -99,7 +100,7 @@
             <source media="(max-width: 768px)" srcset="img/tablet-type-mountain.jpg 1x, img/tablet--type-mountain@2x.jpg 2x">
             <img class="types-of-bisycles__img" src="img/desktop-type-mountain.jpg" srcset="img/desktop-type-mountain@2x.jpg 2x" alt="Фото горного велосипеда" width="342" height="566">
           </picture>
-          <h3 class="types-of-bisycles__caption">Горный велосипед</h3>
+          <h3 class="types-of-bisycles__subcaption">Горный велосипед</h3>
         </li>
         <li class="types-of-bisycles__item">
           <picture>
@@ -109,7 +110,7 @@
             <source media="(max-width: 768px)" srcset="img/tablet-type-kids.jpg 1x, img/tablet--type-kids@2x.jpg 2x">
             <img class="types-of-bisycles__img" src="img/desktop-type-kids.jpg" srcset="img/desktop-type-kids@2x.jpg 2x" alt="Фото детского велосипеда" width="342" height="513">
           </picture>
-          <h3 class="types-of-bisycles__caption">Детский велосипед</h3>
+          <h3 class="types-of-bisycles__subcaption">Детский велосипед</h3>
         </li>
       </ul>
     </div>
@@ -117,7 +118,7 @@
 
   <section class="about-bicycle">
     <div class="about-bicycle__wrappper">
-      <h3 class="about-bicycle__caption">Видео про велосипеды</h3>
+      <h2 class="about-bicycle__caption">Видео про велосипеды</h2>
       <p class="about-bicycle__decs">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <picture>
         <source type="image/webp" media="(max-width: 768px)" srcset="img/tablet-more-info.webp 1x, img/tablet-more-info@2x.webp 2x">
@@ -131,7 +132,7 @@
   </section>
 
   <section class="our-address">
-    <h3 class="our-address__caption">Как нас найти?</h3>
+    <h2 class="our-address__caption">Как нас найти?</h2>
     <p class="our-address__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <picture>
       <source type="image/webp" media="(max-width: 320px)" srcset="img/mobile-map.webp 1x, img/mobile-map@2x.webp 2x">
