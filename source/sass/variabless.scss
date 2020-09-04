@@ -1,0 +1,47 @@
+@mixin container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+ }
+
+ @mixin container-tablet {
+  width: 768px;
+  margin: 0 auto;
+  padding: 0;
+ }
+
+ @mixin container-mobile {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+ }
+
+ @mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ @mixin button-hover {
+
+  &:hover,
+  &:focus {
+   outline: none;
+   background-color: $mandarin;
+  }
+ }
+
+ $mobile-width: 320px;
+ $tablet-width: 768px;
+ $desktop-width: 1024px;
+
+ $retina-dpi: 144dpi;
+ $retina-dppx: 1.5dppx;
+
+//  $white: #ffffff;
+//  $light-grey: #FBF8F8;
+//  $salmon: #FE7865;
+//  $mandarin: #F17D4B;
+//  $graphit-black: #141517; //rgba(20, 21, 23, 0.5)
+//  $dark-blue: #2C2E3F;
+//  $black: #000000;
