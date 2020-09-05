@@ -14,46 +14,57 @@
     <include src="build/img/sprite_auto.svg"></include>
   </div>
 
+
   <header class="header">
     <div class="header__wrapper">
       <h1 class="visually-hidden">Moon - интернет-магазин велосипедов</h1>
-      <nav class="header__nav nav">
+      <a class="header__logo">
+        <svg class="header__logo-img" xmlns="http://www.w3.org/2000/svg" width="68" height="21" viewBox="0 0 68 21"
+          aria-label="Логотип интернет-магазина велосипедов 'Moon'">
+          <use xlink:href="#icon-logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav nav nav--opened nav--no-js">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#" class="nav__link">О нас</a>
+            <a href="#about-us" class="nav__link">О нас</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Виды велосипедов</a>
+            <a href="#types-of-bisycles" class="nav__link">Виды велосипедов</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Видео про велосипеды</a>
+            <a href="#about-bicycle" class="nav__link">Видео про велосипеды</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">Контакты</a>
+            <a href="#footer" class="nav__link">Контакты</a>
           </li>
         </ul>
       </nav>
-      <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="68" height="21" viewBox="0 0 68 21">
-        <use xlink:href="#icon-logo"></use>
-      </svg>
     </div>
   </header>
 
   <section class="promo">
     <div class="promo__wrapper offer">
       <b class="offer__caption">Мы продаем велосипеды</b>
-      <p class="offer__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <p class="offer__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </div>
     <div class="promo__wrapper offer-help">
-      <p class="offer-help__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <p class="offer-help__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <form action="#" class="offer-help__form">
         <p class="offer-help__wrapper">
-          <label for="name"></label>
+          <label for="name">
+            <span class="visually-hidden">Введите Ваше Имя</span>
+          </label>
           <input class="offer-help__username" type="text" id="name" name="user-name" placeholder="Введите Ваше Имя"
             required>
         </p>
         <p class="offer-help__wrapper">
-          <label for="phone"></label>
+          <label for="phone">
+            <span class="visually-hidden">Введите Ваш номер телефона</span>
+          </label>
           <input class="offer-help__userphone" type="tel" id="phone" name="user-phone"
             placeholder="Введите Ваш номер телефона" required>
         </p>
@@ -62,25 +73,27 @@
     </div>
   </section>
 
-  <section class="about-us">
-    <h2 class="about-us__caption">Несколько фактов о нас</h2>
-    <ul class="about-us__list">
-      <li class="about-us__item">
-        <p class="about-us__desc">Самый широкий выбор велосипедов!</p>
-      </li>
-      <li class="about-us__item">
-        <p class="about-us__desc">Доставка велосипедов по всей России!</p>
-      </li>
-      <li class="about-us__item">
-        <p class="about-us__desc">Большой выбор крутых аксессуаров!</p>
-      </li>
-      <li class="about-us__item">
-        <p class="about-us__desc">Профессиональные консультации!</p>
-      </li>
-    </ul>
+  <section class="about-us" id="about-us">
+    <div class="about-us__wrapper">
+      <h2 class="about-us__caption">Несколько фактов о нас</h2>
+      <ul class="about-us__list">
+        <li class="about-us__item">
+          <p class="about-us__desc">Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__desc">Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__desc">Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="about-us__item">
+          <p class="about-us__desc">Профессиональные консультации!</p>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <section class="types-of-bisycles">
+  <section class="types-of-bisycles" id="types-of-bisycles">
     <div class="types-of-bicycles__wrapper">
       <h2 class="types-of-bicycles__caption">Виды велосипедов</h2>
       <ul class="types-of-bisycles__list">
@@ -125,41 +138,46 @@
     </div>
   </section>
 
-  <section class="about-bicycle">
+  <section class="about-bicycle" id="about-bicycle">
     <div class="about-bicycle__wrappper">
       <h2 class="about-bicycle__caption">Видео про велосипеды</h2>
       <p class="about-bicycle__decs">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <picture>
-        <source type="image/webp" media="(max-width: 768px)"
-          srcset="img/tablet-more-info.webp 1x, img/tablet-more-info@2x.webp 2x">
-        <source type="image/webp" srcset="img/desktop-more-info.webp 1x, img/desktop-more-info@2x.webp 2x">
+      <div class="about-bicycle__wrappper-img">
+        <picture>
+          <source type="image/webp" media="(max-width: 768px)"
+            srcset="img/tablet-more-info.webp 1x, img/tablet-more-info@2x.webp 2x">
+          <source type="image/webp" srcset="img/desktop-more-info.webp 1x, img/desktop-more-info@2x.webp 2x">
 
-        <source media="(max-width: 768px)" srcset="img/tablet-more-info.jpg 1x, img/tablet--more-info@2x.jpg 2x">
-        <img class="about-bicycle__img" src="img/desktop-more-info.jpg" srcset="img/desktop-more-info@2x.jpg 2x"
-          alt="Фото шоссейного велосипеда" width="929" height="522">
-      </picture>
-      <button class="about-bicycle__button" type="button"></button>
+          <source media="(max-width: 768px)" srcset="img/tablet-more-info.jpg 1x, img/tablet--more-info@2x.jpg 2x">
+          <img class="about-bicycle__img" src="img/desktop-more-info.jpg" srcset="img/desktop-more-info@2x.jpg 2x"
+            alt="Фото шоссейного велосипеда" width="929" height="522">
+        </picture>
+        <button class="about-bicycle__button" type="button"></button>
+      </div>
     </div>
   </section>
 
-  <section class="our-address">
-    <h2 class="our-address__caption">Как нас найти?</h2>
-    <p class="our-address__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <picture>
-      <source type="image/webp" media="(max-width: 320px)" srcset="img/mobile-map.webp 1x, img/mobile-map@2x.webp 2x">
-      <source type="image/webp" media="(max-width: 768px)" srcset="img/tablet-map.webp 1x, img/tablet-map@2x.webp 2x">
-      <source type="image/webp" srcset="img/desktop-map.webp 1x, img/desktop-map@2x.webp 2x">
+  <footer class="footer" id="footer">
+    <div class="footer__wrapper">
+      <h2 class="footer__caption">Как нас найти?</h2>
+      <p class="footer__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
 
-      <source media="(max-width: 320px)" srcset="img/mobile-map.png 1x, img/mobile--map@2x.png 2x">
-      <source media="(max-width: 768px)" srcset="img/tablet-map.png 1x, img/tablet--map@2x.png 2x">
-      <img class="our-address__img" src="img/desktop-map.png" srcset="img/desktop-map@2x.png 2x"
-        alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
-    </picture>
-  </section>
+      <picture>
+        <source type="image/webp" media="(max-width: 320px)" srcset="img/mobile-map.webp 1x, img/mobile-map@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 768px)" srcset="img/tablet-map.webp 1x, img/tablet-map@2x.webp 2x">
+        <source type="image/webp" srcset="img/desktop-map.webp 1x, img/desktop-map@2x.webp 2x">
 
-  <footer class="footer">
-    <a class="footer__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-    <a class="footer__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        <source media="(max-width: 320px)" srcset="img/mobile-map.png 1x, img/mobile--map@2x.png 2x">
+        <source media="(max-width: 768px)" srcset="img/tablet-map.png 1x, img/tablet--map@2x.png 2x">
+        <img class="footer__img" src="img/desktop-map.png" srcset="img/desktop-map@2x.png 2x"
+          alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
+      </picture>
+
+      <div class="footer__wrapper-contacts">
+        <a class="footer__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        <a class="footer__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
+    </div>
   </footer>
 </body>
 

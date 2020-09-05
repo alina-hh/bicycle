@@ -1,0 +1,22 @@
+.offer {
+  padding-top: 46px;
+  width: 393px;
+}
+
+.offer__caption {
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: $white;
+}
+
+.offer__desc {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+  color: $white;
+}

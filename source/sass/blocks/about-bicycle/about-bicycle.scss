@@ -1,0 +1,82 @@
+.about-bicycle {
+  min-height: 804px;
+  background-image: linear-gradient(180deg, $onyx 0%, $onyx 87.8%, $white 87.8%, $white 100%);
+}
+
+.about-bicycle__wrappper {
+  @include container;
+  padding-top: 120px;
+}
+
+.about-bicycle__caption {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 355px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+}
+
+.about-bicycle__decs {
+  margin: 0 auto;
+  margin-bottom: 58px;
+  width: 340px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: $white;
+  opacity: 0.7;
+}
+
+.about-bicycle__wrappper-img {
+  position: relative;
+  margin: 0 auto;
+  width: 929px;
+  height: 522px;
+}
+
+.about-bicycle__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  background-color: $cyan;
+  border: none;
+  border-radius: 50%;
+  z-index: 9;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.9;
+  }
+  &:active{
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 23px;
+    left: 29px;
+    width: 9px;
+    height: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent $dark-onyx;
+    border-width: 9px 0px 9px 14px;
+    z-index: 10;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 0.7;
+  }
+  &:active::after{
+    opacity: 0.5;
+  }
+}

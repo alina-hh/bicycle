@@ -1,47 +1,40 @@
 @mixin container {
-  width: 1170px;
+  width: 1222px;
   margin: 0 auto;
   padding: 0;
- }
+}
 
- @mixin container-tablet {
-  width: 768px;
+@mixin container-tablet {
+  width: 767px;
   margin: 0 auto;
   padding: 0;
- }
+}
 
- @mixin container-mobile {
-  width: 320px;
+@mixin container-mobile {
+  width: 319px;
   margin: 0 auto;
   padding: 0;
- }
+}
 
- @mixin list-reset {
+@mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
- }
+}
 
- @mixin button-hover {
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
-  &:hover,
-  &:focus {
-   outline: none;
-   background-color: $mandarin;
-  }
- }
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
- $mobile-width: 320px;
- $tablet-width: 768px;
- $desktop-width: 1024px;
-
- $retina-dpi: 144dpi;
- $retina-dppx: 1.5dppx;
-
-//  $white: #ffffff;
-//  $light-grey: #FBF8F8;
-//  $salmon: #FE7865;
-//  $mandarin: #F17D4B;
-//  $graphit-black: #141517; //rgba(20, 21, 23, 0.5)
-//  $dark-blue: #2C2E3F;
-//  $black: #000000;
+$white: #ffffff;
+$light-grey: #F6F7F9;
+$grey: #C9CCD4;
+$cyan: #0AD9C6;
+$graphite: #1F1F1F;
+$dark-iron: #1C1C1C;
+$onyx: #131314;
+$dark-onyx: #070707;
+$black: #000000;

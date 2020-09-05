@@ -1,38 +1,36 @@
-
 body {
   margin: 0 auto;
   padding: 0;
-  min-width: 1024px;
+  // width: 1160px;
   font-family: 'OpenSans', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  // color: $dark-blue;
-  overflow-x: hidden;
- }
+  color: $black;
+}
 
- img {
+img {
   max-width: 100%;
   height: auto;
- }
+}
 
- a {
+a {
   text-decoration: none;
- }
+}
 
- html {
+html {
   box-sizing: border-box;
- }
+}
 
- *,
- *::before,
- *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
- }
+}
 
- .visually-hidden:not(:focus):not(:active),
- input[type='checkbox'].visually-hidden,
- input[type='radio'].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -43,4 +41,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
- }
+}

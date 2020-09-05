@@ -1,0 +1,70 @@
+.offer-help {
+  width: 327px;
+}
+
+.offer-help__desc {
+  margin: 0;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  color: $white;
+}
+
+.offer-help__wrapper {
+  margin: 0;
+}
+
+.offer-help__username,
+.offer-help__userphone {
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  width: 327px;
+  min-height: 48px;
+
+  background-color: $white;
+  border: 1px solid $grey;
+  border-radius: 4px;
+}
+
+.offer-help__username::placeholder,
+.offer-help__userphone::placeholder {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: $dark-iron;
+  opacity: 0.5;
+}
+
+.offer-help__username:hover::placeholder,
+.offer-help__userphone:hover::placeholder,
+.offer-help__username:focus,
+.offer-help__userphone:focus,
+.offer-help__username:focus::placeholder,
+.offer-help__userphone:focus::placeholder {
+  opacity: 1;
+  outline: none;
+}
+
+.offer-help__button {
+  margin: 0 auto;
+  width: 325px;
+  min-height: 51px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  background-color: $cyan;
+  border: none;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.9;
+    color: rgba($color: $black, $alpha: 0.5);
+  }
+}
