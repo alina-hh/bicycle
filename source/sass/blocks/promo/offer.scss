@@ -42,3 +42,14 @@
     text-align: center;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .offer {
+    margin-bottom: 140px;
+    width: 288px;
+  }
+
+  .offer__desc {
+    width: 288px;
+  }
+}

@@ -95,3 +95,26 @@
     width: 321px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .offer-help {
+    width: 288px;
+  }
+
+  .offer-help__desc {
+    margin-bottom: 20px;
+  }
+
+  .offer-help__username,
+  .offer-help__userphone {
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-left: 26px;
+    width: 288px;
+    border-radius: 4px;
+  }
+
+  .offer-help__button {
+    width: 288px;
+  }
+}

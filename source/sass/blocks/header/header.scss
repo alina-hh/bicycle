@@ -51,3 +51,23 @@
     padding-left: 21px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .header {
+    margin-bottom: 70px;
+
+    &::after {
+      content: url("../img/mobile-back.png");
+      width: 319px;
+      height: 390px;
+    }
+  }
+
+  .header__wrapper {
+    @include container-mobile;
+  }
+
+  .header__logo {
+    padding-left: 16px;
+  }
+}

@@ -186,3 +186,61 @@
     width: 238px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .types-of-bicycles__wrapper {
+    @include container-mobile;
+    padding-top: 50px;
+    padding-bottom: 57px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .types-of-bicycles__caption {
+    width: 270px;
+  }
+
+  .types-of-bisycles__list {
+    padding: 0;
+    width: 270px;
+  }
+
+  .types-of-bisycles__item {
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 270px;
+    min-height: 300px;
+
+    &:nth-child(1n) {
+      margin-top: 0;
+
+      &::before {
+        top: 200px;
+        left: -25px;
+        width: 127px;
+        height: 127px;
+        border: 18px solid $cyan;
+      }
+    }
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+
+      &::before {
+        top: -17px;
+        left: 217px;
+        width: 68px;
+        height: 68px;
+        border: 13px solid $cyan;
+      }
+    }
+  }
+
+  .types-of-bisycles__img {
+    margin-bottom: 20px;
+  }
+
+  .types-of-bisycles__subcaption {
+    width: 270px;
+  }
+}
