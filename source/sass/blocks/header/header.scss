@@ -3,7 +3,7 @@
   margin-bottom: 263px;
 
   &::after {
-    content: url('../img/desktop-back.png');
+    content: url("../img/desktop-back.png");
     position: absolute;
     top: 0;
     left: 50%;
@@ -27,9 +27,27 @@
   left: 0;
 }
 
+@media (max-width: $desktop-width) {
+  .header {
+    margin-bottom: 84px;
 
-// @media (max-width: $desktop-width) and (min-width: $tablet-width) {
-//   body{
-//     background-color: purple;
-//   }
-// }
+    &::after {
+      content: url("../img/tablet-back.png");
+      width: 767px;
+      height: 340px;
+    }
+  }
+
+  .header__wrapper {
+    @include container-tablet;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    position: relative;
+    top: 0;
+    padding-top: 25px;
+    padding-left: 21px;
+  }
+}

@@ -68,3 +68,30 @@
     color: rgba($color: $black, $alpha: 0.5);
   }
 }
+
+@media (max-width: $desktop-width) {
+  .offer-help {
+    width: 324px;
+  }
+
+  .offer-help__desc {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+  }
+
+  .offer-help__username,
+  .offer-help__userphone {
+    margin-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+    width: 321px;
+    border-radius: 6px;
+  }
+
+  .offer-help__button {
+    width: 321px;
+  }
+}

@@ -1,3 +1,4 @@
+
 .nav__toggle {
   display: none;
 }
@@ -12,7 +13,7 @@
   padding-bottom: 9px;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -40,5 +41,123 @@
   &:focus {
     outline: none;
     opacity: 1;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .nav__toggle {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: $cyan;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .nav--closed .nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 14px;
+    width: 23px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  }
+
+  .nav--closed:hover .nav__toggle::after {
+    background-color: rgba($color: $black, $alpha: 0.5);
+    box-shadow: 0 6px 0 0 rgba($color: $black, $alpha: 0.5), 0 12px 0 0 rgba($color: $black, $alpha: 0.5);
+  }
+
+  .nav--opened .nav__toggle {
+    background-color: $white;
+    z-index: 1000;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: 10px;
+      width: 33px;
+      height: 2px;
+      background-color: rgba($color: $onyx, $alpha: 0.2);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: rgba($color: $onyx, $alpha: 0.4);
+    }
+  }
+
+  .nav--no-js .nav__toggle {
+    display: none;
+  }
+
+  // .nav--no-js .nav__list {}
+
+
+  .nav__list {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    min-height: 300px;
+    background-color: $white;
+    z-index: 100;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .nav__item {
+    padding-left: 16px;
+    padding-right: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: $light-grey;
+  }
+
+  .nav__link {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    color: $dark-grey;
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+
+  // .nav--no-js .nav__list {
+  //   position: relative;
+  // }
+
+  .nav--opened .nav__list {
+    display: flex;
   }
 }

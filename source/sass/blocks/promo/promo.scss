@@ -6,3 +6,16 @@
   padding-left: 171px;
   padding-right: 171px;
 }
+
+@media (max-width: $desktop-width) {
+  .promo {
+    @include container-tablet;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 121px;
+    padding-right: 121px;
+    padding-bottom: 35px;
+  }
+}

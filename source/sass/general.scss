@@ -1,8 +1,7 @@
 body {
   margin: 0 auto;
   padding: 0;
-  // width: 1160px;
-  font-family: 'OpenSans', 'Arial', sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -29,8 +28,8 @@ html {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'].visually-hidden,
-input[type='radio'].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
