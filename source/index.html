@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="интернет-магазин, велосипеды">
   <title>Moon - интернет-магазин велосипедов</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="css/style.min.css" as="style">
 </head>
 
 <body>
   <div style="display:none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-
 
   <header class="header">
     <div class="header__wrapper">
@@ -30,16 +32,16 @@
         </button>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#about-us" class="nav__link">О нас</a>
+            <a href="#about-us">О нас</a>
           </li>
           <li class="nav__item">
-            <a href="#types-of-bisycles" class="nav__link">Виды велосипедов</a>
+            <a href="#types-of-bisycles">Виды велосипедов</a>
           </li>
           <li class="nav__item">
-            <a href="#about-bicycle" class="nav__link">Видео про велосипеды</a>
+            <a href="#about-bicycle">Видео про велосипеды</a>
           </li>
           <li class="nav__item">
-            <a href="#footer" class="nav__link">Контакты</a>
+            <a href="#footer">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -48,29 +50,32 @@
 
   <section class="promo">
     <div class="promo__wrapper offer">
-      <b class="offer__caption">Мы продаем велосипеды</b>
-      <p class="offer__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <b>Мы продаем велосипеды</b>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </div>
     <div class="promo__wrapper offer-help">
-      <p class="offer-help__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <form action="#" class="offer-help__form">
-        <p class="offer-help__wrapper">
-          <label for="name">
-            <span class="visually-hidden">Введите Ваше Имя</span>
-          </label>
-          <input class="offer-help__username" type="text" id="name" name="user-name" placeholder="Введите Ваше Имя"
-            required>
-        </p>
-        <p class="offer-help__wrapper">
-          <label for="phone">
-            <span class="visually-hidden">Введите Ваш номер телефона</span>
-          </label>
-          <input class="offer-help__userphone" type="tel" id="phone" name="user-phone"
-            placeholder="Введите Ваш номер телефона" required>
-        </p>
-        <button class="offer-help__button" type="submit">Подобрать велосипед мечты</button>
-      </form>
+      <div class="offer-help__wrapper">
+        <p class="offer-help__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <form action="#" class="offer-help__form">
+          <p class="offer-help__form-wrapper">
+            <label for="name">
+              <span class="visually-hidden">Введите Ваше Имя</span>
+            </label>
+            <input type="text" id="name" name="user-name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]"
+              required>
+          </p>
+          <p class="offer-help__form-wrapper">
+            <label for="phone">
+              <span class="visually-hidden">Введите Ваш номер телефона</span>
+            </label>
+            <input type="tel" id="phone" name="user-phone" placeholder="Введите Ваш номер телефона"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+          </p>
+          <button class="offer-help__button" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </div>
     </div>
+
   </section>
 
   <section class="about-us" id="about-us">
@@ -78,16 +83,16 @@
       <h2 class="about-us__caption">Несколько фактов о нас</h2>
       <ul class="about-us__list">
         <li class="about-us__item">
-          <p class="about-us__desc">Самый широкий выбор велосипедов!</p>
+          <p>Самый широкий выбор велосипедов!</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__desc">Доставка велосипедов по всей России!</p>
+          <p>Доставка велосипедов по всей России!</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__desc">Большой выбор крутых аксессуаров!</p>
+          <p>Большой выбор крутых аксессуаров!</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__desc">Профессиональные консультации!</p>
+          <p>Профессиональные консультации!</p>
         </li>
       </ul>
     </div>
@@ -104,10 +109,12 @@
             <source type="image/webp" srcset="img/desktop-type-road.webp 1x, img/desktop-type-road@2x.webp 2x">
 
             <source media="(max-width: 1024px)" srcset="img/tablet-type-road.jpg 1x, img/tablet--type-road@2x.jpg 2x">
-            <img class="types-of-bisycles__img" src="img/desktop-type-road.jpg" srcset="img/desktop-type-road@2x.jpg 2x"
+            <!--tablet 1х: width="270" height="300"; 2x: width="540" height="600" -->
+            <img src="img/desktop-type-road.jpg" srcset="img/desktop-type-road@2x.jpg 2x"
               alt="Фото дорожного велосипеда" width="342" height="503">
+            <!--desktop 1х: width="342" height="503"; 2x: width="684" height="1006" -->
           </picture>
-          <h3 class="types-of-bisycles__subcaption">Дорожный велосипед</h3>
+          <h3>Дорожный велосипед</h3>
         </li>
         <li class="types-of-bisycles__item">
           <picture>
@@ -117,10 +124,12 @@
 
             <source media="(max-width: 1024px)"
               srcset="img/tablet-type-mountain.jpg 1x, img/tablet--type-mountain@2x.jpg 2x">
-            <img class="types-of-bisycles__img" src="img/desktop-type-mountain.jpg"
-              srcset="img/desktop-type-mountain@2x.jpg 2x" alt="Фото горного велосипеда" width="342" height="566">
+            <!--tablet 1х: width="270" height="300"; 2x: width="540" height="600" -->
+            <img src="img/desktop-type-mountain.jpg" srcset="img/desktop-type-mountain@2x.jpg 2x"
+              alt="Фото горного велосипеда" width="342" height="566">
+            <!--desktop 1х: width="342" height="566" 2x: width="684" height="1132" -->
           </picture>
-          <h3 class="types-of-bisycles__subcaption">Горный велосипед</h3>
+          <h3>Горный велосипед</h3>
         </li>
         <li class="types-of-bisycles__item">
           <picture>
@@ -129,10 +138,12 @@
             <source type="image/webp" srcset="img/desktop-type-kids.webp 1x, img/desktop-type-kids@2x.webp 2x">
 
             <source media="(max-width: 1024px)" srcset="img/tablet-type-kids.jpg 1x, img/tablet--type-kids@2x.jpg 2x">
-            <img class="types-of-bisycles__img" src="img/desktop-type-kids.jpg" srcset="img/desktop-type-kids@2x.jpg 2x"
-              alt="Фото детского велосипеда" width="342" height="513">
+            <!--tablet 1х: width="270" height="300"; 2x: width="540" height="600" -->
+            <img src="img/desktop-type-kids.jpg" srcset="img/desktop-type-kids@2x.jpg 2x" alt="Фото детского велосипеда"
+              width="342" height="513">
+            <!--desktop 1х: width="342" height="513" 2x: width="684" height="1026" -->
           </picture>
-          <h3 class="types-of-bisycles__subcaption">Детский велосипед</h3>
+          <h3>Детский велосипед</h3>
         </li>
       </ul>
     </div>
@@ -144,15 +155,23 @@
       <p class="about-bicycle__decs">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="about-bicycle__wrappper-img">
         <picture>
-          <source type="image/webp" media="(max-width: 1024px)""
-            srcset=" img/tablet-more-info.webp 1x, img/tablet-more-info@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/mobile-more-info.webp 1x, img/mobile-more-info@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="img/tablet-more-info.webp 1x, img/tablet-more-info@2x.webp 2x">
           <source type="image/webp" srcset="img/desktop-more-info.webp 1x, img/desktop-more-info@2x.webp 2x">
 
-          <source media="(max-width: 1024px)"" srcset=" img/tablet-more-info.jpg 1x, img/tablet--more-info@2x.jpg 2x">
-          <img class="about-bicycle__img" src="img/desktop-more-info.jpg" srcset="img/desktop-more-info@2x.jpg 2x"
-            alt="Фото шоссейного велосипеда" width="929" height="522">
+          <source media="(max-width: 767px)" srcset="img/mobile-more-info.jpg 1x, img/mobile--more-info@2x.jpg 2x">
+          <!--mobile 1х: width="288" height="162"; 2x: width="576" height="324" -->
+          <source media="(max-width: 1024px)" srcset="img/tablet-more-info.jpg 1x, img/tablet--more-info@2x.jpg 2x">
+          <!--tablet 1х: width="767" height="340"; 2x: width="1534" height="680" -->
+          <img src="img/desktop-more-info.jpg" srcset="img/desktop-more-info@2x.jpg 2x" alt="Фото шоссейного велосипеда"
+            width="929" height="522">
+          <!--desktop 1х: width="929" height="522" 2x: width="1858" height="1044" -->
         </picture>
-        <button class="about-bicycle__button" type="button"></button>
+        <button type="button">
+          <span class="visually-hidden">Включить видео</span>
+        </button>
       </div>
     </div>
   </section>
@@ -169,9 +188,12 @@
         <source type="image/webp" srcset="img/desktop-map.webp 1x, img/desktop-map@2x.webp 2x">
 
         <source media="(max-width: 766px)" srcset="img/mobile-map.png 1x, img/mobile--map@2x.png 2x">
-        <source media="(max-width: 1024px)"" srcset=" img/tablet-map.png 1x, img/tablet--map@2x.png 2x">
+        <!--mobile 1х: width="320" height="250"; 2x: width="640" height="500" -->
+        <source media="(max-width: 1024px)" srcset="img/tablet-map.png 1x, img/tablet--map@2x.png 2x">
+        <!--tablet 1х: width="698" height="545"; 2x: width="1396" height="1090" -->
         <img class="footer__img" src="img/desktop-map.png" srcset="img/desktop-map@2x.png 2x"
           alt="Наш адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" width="957" height="530">
+        <!--desktop 1х: width="957" height="530" 2x: width="1914" height="1060" -->
       </picture>
 
       <div class="footer__wrapper-contacts">
@@ -180,6 +202,7 @@
       </div>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 

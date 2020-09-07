@@ -1,20 +1,3 @@
-.header {
-  position: relative;
-  margin-bottom: 263px;
-
-  &::after {
-    content: url("../img/desktop-back.png");
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 1440px;
-    height: 825px;
-    background-color: $graphite;
-    z-index: -10;
-  }
-}
-
 .header__wrapper {
   @include container;
   position: relative;
@@ -28,16 +11,6 @@
 }
 
 @media (max-width: $desktop-width) {
-  .header {
-    margin-bottom: 84px;
-
-    &::after {
-      content: url("../img/tablet-back.png");
-      width: 767px;
-      height: 340px;
-    }
-  }
-
   .header__wrapper {
     @include container-tablet;
     display: flex;
@@ -53,16 +26,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .header {
-    margin-bottom: 70px;
-
-    &::after {
-      content: url("../img/mobile-back.png");
-      width: 319px;
-      height: 390px;
-    }
-  }
-
   .header__wrapper {
     @include container-mobile;
   }

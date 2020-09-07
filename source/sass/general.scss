@@ -1,4 +1,5 @@
 body {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -6,6 +7,55 @@ body {
   font-weight: 400;
   font-style: normal;
   color: $black;
+  background-image: url("../img/desktop-back.png");
+  background-position: top center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: $onyx;
+  overflow-x: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/desktop-back@2x.png");
+  }
+}
+
+@media (min-width: desktop-width) and (min-resolution: 144dpi), (min-width: desktop-width) and (min-resolution: 1.5dppx) {
+  .more-info__img {
+    background-image: url("../img/desktop-back@2x.png");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  body {
+    background-image: url("../img/tablet-back.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-back@2x.png");
+    }
+  }
+
+  @media (max-width: desktop-width) and (min-resolution: 144dpi), (max-width: desktop-width) and (min-resolution: 1.5dppx) {
+    .more-info__img {
+      background-image: url("../img/tablet-back@2x.png");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    background-color: $dark-iron;
+    background-image: url("../img/mobile-back.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mobile-back@2x.png");
+    }
+  }
+
+  @media (max-width: tablet-width) and (min-resolution: 144dpi), (max-width: tablet-width) and (min-resolution: 1.5dppx) {
+    .more-info__img {
+      background-image: url("../img/mobile-back@2x.png");
+    }
+  }
 }
 
 img {

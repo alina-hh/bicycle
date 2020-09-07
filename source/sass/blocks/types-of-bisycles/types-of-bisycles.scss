@@ -77,6 +77,8 @@
   }
 
   &:nth-child(3n) {
+    margin-top: 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -95,13 +97,13 @@
   }
 }
 
-.types-of-bisycles__img {
+.types-of-bisycles__item img {
   display: block;
   margin-bottom: 20px;
   width: 342px;
 }
 
-.types-of-bisycles__subcaption {
+.types-of-bisycles__item h3 {
   margin: 0;
   width: 342px;
   font-weight: 600;
@@ -175,13 +177,13 @@
     }
   }
 
-  .types-of-bisycles__img {
+  .types-of-bisycles__item img {
     margin-bottom: 22px;
     width: 270px;
     height: 300px;
   }
 
-  .types-of-bisycles__subcaption {
+  .types-of-bisycles__item h3 {
     margin: 0 auto;
     width: 238px;
   }
@@ -191,7 +193,7 @@
   .types-of-bicycles__wrapper {
     @include container-mobile;
     padding-top: 50px;
-    padding-bottom: 57px;
+    padding-bottom: 53px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -212,7 +214,7 @@
     min-height: 300px;
 
     &:nth-child(1n) {
-      margin-top: 0;
+      margin-bottom: 43px;
 
       &::before {
         top: 200px;
@@ -236,11 +238,11 @@
     }
   }
 
-  .types-of-bisycles__img {
+  .types-of-bisycles__item img {
     margin-bottom: 20px;
   }
 
-  .types-of-bisycles__subcaption {
+  .types-of-bisycles__item h3 {
     width: 270px;
   }
 }

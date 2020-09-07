@@ -12,12 +12,12 @@
   color: $white;
 }
 
-.offer-help__wrapper {
+.offer-help__form-wrapper {
   margin: 0;
 }
 
-.offer-help__username,
-.offer-help__userphone {
+.offer-help__form-wrapper input {
+  display: block;
   margin-bottom: 20px;
   padding-top: 14px;
   padding-bottom: 10px;
@@ -30,8 +30,7 @@
   border-radius: 4px;
 }
 
-.offer-help__username::placeholder,
-.offer-help__userphone::placeholder {
+.offer-help__form-wrapper input::placeholder {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.2px;
@@ -39,12 +38,9 @@
   opacity: 0.5;
 }
 
-.offer-help__username:hover::placeholder,
-.offer-help__userphone:hover::placeholder,
-.offer-help__username:focus,
-.offer-help__userphone:focus,
-.offer-help__username:focus::placeholder,
-.offer-help__userphone:focus::placeholder {
+.offer-help__form-wrapper input:hover::placeholder,
+.offer-help__form-wrapper input:focus,
+.offer-help__form-wrapper input:focus::placeholder {
   opacity: 1;
   outline: none;
 }
@@ -60,6 +56,7 @@
   background-color: $cyan;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -71,6 +68,14 @@
 
 @media (max-width: $desktop-width) {
   .offer-help {
+    width: 100%;
+    background: $white;
+  }
+
+  .offer-help__wrapper {
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 35px;
     width: 324px;
   }
 
@@ -81,8 +86,7 @@
     color: $black;
   }
 
-  .offer-help__username,
-  .offer-help__userphone {
+  .offer-help__form-wrapper input {
     margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -97,7 +101,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .offer-help {
+  .offer-help__wrapper {
     width: 288px;
   }
 
@@ -105,8 +109,7 @@
     margin-bottom: 20px;
   }
 
-  .offer-help__username,
-  .offer-help__userphone {
+  .offer-help__form-wrapper input {
     padding-top: 13px;
     padding-bottom: 11px;
     padding-left: 26px;
