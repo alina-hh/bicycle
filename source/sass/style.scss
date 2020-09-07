@@ -1,3 +1,12 @@
-h1 {
-  color: red;
-}
+@import "font";
+@import "variabless";
+@import "general";
+@import "blocks/header/header";
+@import "blocks/header/nav";
+@import "blocks/promo/promo";
+@import "blocks/promo/offer";
+@import "blocks/promo/offer-help";
+@import "blocks/about-us/about-us";
+@import "blocks/types-of-bisycles/types-of-bisycles";
+@import "blocks/about-bicycle/about-bicycle";
+@import "blocks/footer/footer";

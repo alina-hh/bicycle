@@ -1,0 +1,93 @@
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: $black;
+  background-image: url("../img/desktop-back.png");
+  background-position: top center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: $onyx;
+  overflow-x: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/desktop-back@2x.png");
+  }
+}
+
+@media (min-width: desktop-width) and (min-resolution: 144dpi), (min-width: desktop-width) and (min-resolution: 1.5dppx) {
+  .more-info__img {
+    background-image: url("../img/desktop-back@2x.png");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  body {
+    background-image: url("../img/tablet-back.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/tablet-back@2x.png");
+    }
+  }
+
+  @media (max-width: desktop-width) and (min-resolution: 144dpi), (max-width: desktop-width) and (min-resolution: 1.5dppx) {
+    .more-info__img {
+      background-image: url("../img/tablet-back@2x.png");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    background-color: $dark-iron;
+    background-image: url("../img/mobile-back.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/mobile-back@2x.png");
+    }
+  }
+
+  @media (max-width: tablet-width) and (min-resolution: 144dpi), (max-width: tablet-width) and (min-resolution: 1.5dppx) {
+    .more-info__img {
+      background-image: url("../img/mobile-back@2x.png");
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

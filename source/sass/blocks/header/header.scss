@@ -1,0 +1,36 @@
+.header__wrapper {
+  @include container;
+  position: relative;
+  width: 877px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 318px;
+  left: 0;
+}
+
+@media (max-width: $desktop-width) {
+  .header__wrapper {
+    @include container-tablet;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    position: relative;
+    top: 0;
+    padding-top: 25px;
+    padding-left: 21px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header__wrapper {
+    @include container-mobile;
+  }
+
+  .header__logo {
+    padding-left: 16px;
+  }
+}

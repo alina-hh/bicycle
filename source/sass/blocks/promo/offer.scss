@@ -1,0 +1,58 @@
+.offer {
+  padding-top: 46px;
+  width: 393px;
+}
+
+.offer b {
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  color: $white;
+}
+
+.offer p {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+  color: $white;
+}
+
+@media (max-width: $desktop-width) {
+  .offer {
+    @include container-tablet;
+    position: relative;
+    padding-bottom: 80px;
+    padding-top: 84px;
+    width: 525px;
+  }
+
+  .offer b {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .offer p {
+    margin: 0 auto;
+    width: 435px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .offer {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    width: 288px;
+  }
+
+  .offer p {
+    width: 288px;
+  }
+}

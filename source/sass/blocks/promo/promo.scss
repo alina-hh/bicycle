@@ -1,0 +1,20 @@
+.promo {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 240px;
+  padding-top: 263px;
+  padding-left: 171px;
+  padding-right: 171px;
+}
+
+@media (max-width: $desktop-width) {
+  .promo {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
