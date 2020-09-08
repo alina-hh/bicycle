@@ -1,17 +1,17 @@
 .about-bicycle {
   min-height: 804px;
-  background-image: linear-gradient(180deg, $onyx 0%, $onyx 87.8%, $white 87.8%, $white 100%);
+  background-image: linear-gradient(180deg, $onyx 0%, $onyx 87%, $white 87%, $white 100%);
 }
 
 .about-bicycle__wrappper {
   @include container;
-  padding-top: 120px;
+  padding-top: 121px;
 }
 
 .about-bicycle__caption {
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 355px;
+  width: 100%;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -22,7 +22,7 @@
 .about-bicycle__decs {
   margin: 0 auto;
   margin-bottom: 58px;
-  width: 340px;
+  width: 28%;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
@@ -34,8 +34,8 @@
 .about-bicycle__wrappper-img {
   position: relative;
   margin: 0 auto;
-  width: 929px;
-  height: 522px;
+  width: 76%;
+  height: auto;
 }
 
 .about-bicycle__wrappper-img button {
@@ -87,7 +87,7 @@
 @media (max-width: $desktop-width) {
   .about-bicycle {
     min-height: 498px;
-    background-image: linear-gradient(180deg, $onyx 0%, $onyx 83%, $white 83%, $white 100%);
+    background-image: linear-gradient(180deg, $onyx 0%, $onyx 82%, $white 82%, $white 100%);
   }
 
   .about-bicycle__wrappper {
@@ -96,19 +96,17 @@
   }
 
   .about-bicycle__caption {
-    width: 283px;
     font-size: 24px;
   }
 
   .about-bicycle__decs {
     margin: 0 auto;
     margin-bottom: 40px;
-    width: 432px;
+    width: 56%;
   }
 
   .about-bicycle__wrappper-img {
-    width: 503px;
-    height: 282px;
+    width: 66%;
   }
 
   .about-bicycle__wrappper-img button {
@@ -128,7 +126,7 @@
 @media (max-width: $tablet-width) {
   .about-bicycle {
     min-height: 433px;
-    background-image: linear-gradient(180deg, $onyx 0%, $onyx 88.5%, $white 88.5%, $white 100%);
+    background-image: linear-gradient(180deg, $onyx 0%, $onyx 88%, $white 88%, $white 100%);
   }
 
   .about-bicycle__wrappper {
@@ -139,18 +137,16 @@
   }
 
   .about-bicycle__caption {
-    width: 288px;
     text-align: start;
   }
 
   .about-bicycle__decs {
-    margin-bottom: 54px;
-    width: 290px;
+    margin-bottom: 52px;
+    width: 100%;
   }
 
   .about-bicycle__wrappper-img {
-    width: 288px;
-    height: 162px;
+    width: 100%;
   }
 
   .about-bicycle__wrappper-img button {

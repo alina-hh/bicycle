@@ -30,14 +30,9 @@
 
 .about-us__item {
   position: relative;
-  margin-right: 30px;
   min-height: 145px;
-  width: 263px;
+  width: 22%;
   text-align: center;
-
-  &:nth-child(4n+4) {
-    margin-right: 0;
-  }
 
   &:nth-child(1n)::before,
   &:nth-child(2n)::before,
@@ -45,7 +40,8 @@
   &:nth-child(4n)::before {
     position: absolute;
     top: 0;
-    left: 113px;
+    left: 50%;
+    transform: translate(-50%, 0);
     font-weight: bold;
     font-size: 28px;
     line-height: 38px;
@@ -98,17 +94,13 @@
 
   .about-us__item {
     margin-bottom: 40px;
-    width: 262px;
+    width: 47%;
     min-height: 124px;
-
-    &:nth-child(2n+2) {
-      margin-right: 0;
-    }
   }
 
   .about-us__item p {
     margin: 0;
-    padding-top: 55px;
+    padding-top: 52px;
   }
 }
 
@@ -122,7 +114,7 @@
   }
 
   .about-us__caption {
-    width: 292px;
+    width: 100%;
   }
 
   .about-us__list {
@@ -132,15 +124,8 @@
   .about-us__item {
     margin-right: 0;
     margin-bottom: 30px;
-    width: 263px;
+    width: 100%;
     min-height: 125px;
-
-    &:nth-child(1n)::before,
-    &:nth-child(2n)::before,
-    &:nth-child(3n)::before,
-    &:nth-child(4n)::before {
-      left: 117px;
-    }
 
     &:nth-child(2n) {
       margin-bottom: 47px;

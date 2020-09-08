@@ -12,7 +12,6 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-color: $onyx;
-  overflow-x: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/desktop-back@2x.png");
