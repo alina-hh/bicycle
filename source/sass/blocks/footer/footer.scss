@@ -4,7 +4,7 @@
 
 .footer__wrapper {
   @include container;
-  padding-top: 151px;
+  padding-top: 145px;
   padding-bottom: 98px;
   padding-left: 132px;
   padding-right: 132px;
@@ -13,7 +13,7 @@
 .footer__caption {
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 230px;
+  width: 100%;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -24,7 +24,7 @@
 .footer__desc {
   margin: 0 auto;
   margin-bottom: 41px;
-  width: 560px;
+  width: 50%;
   font-size: 17px;
   line-height: 31px;
   text-align: center;
@@ -34,9 +34,8 @@
 .footer__img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 35px;
-  width: 957px;
-  height: 530px;
+  margin-bottom: 33px;
+  width: 100%;
 }
 
 .footer__wrapper-contacts {
@@ -73,7 +72,7 @@
 .footer__mail {
   margin-right: 90px;
   padding-left: 41px;
-  width: 270px;
+  width: 28%;
 
   &::before {
     content: url("../img/mail-icon.svg");
@@ -86,7 +85,7 @@
 
 .footer__phone {
   padding-left: 36px;
-  width: 200px;
+  width: 21%;
 
   &::before {
     content: url("../img/phone-icon.svg");
@@ -100,7 +99,7 @@
 @media (max-width: $desktop-width) {
   .footer__wrapper {
     @include container-tablet;
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 52px;
     padding-left: 35px;
     padding-right: 35px;
@@ -108,28 +107,29 @@
 
   .footer__caption {
     margin-bottom: 20px;
-    width: 185px;
     font-size: 24px;
   }
 
   .footer__desc {
     margin-bottom: 20px;
-    width: 632px;
+    width: 100%;
   }
 
   .footer__img {
-    margin-bottom: 18px;
-    width: 698px;
-    height: 545px;
+    margin-bottom: 16px;
   }
 
   .footer__mail {
+    width: 39%;
+
     &::before {
       left: 0;
     }
   }
 
   .footer__phone {
+    width: 28%;
+
     &::before {
       left: 0;
     }
@@ -139,7 +139,7 @@
 @media (max-width: $tablet-width) {
   .footer__wrapper {
     @include container-mobile;
-    padding-top: 70px;
+    padding-top: 63px;
     padding-bottom: 35px;
     padding-left: 0;
     padding-right: 0;
@@ -147,26 +147,23 @@
 
   .footer__caption {
     margin-bottom: 20px;
-    width: 288px;
     font-size: 18px;
   }
 
   .footer__desc {
     margin-bottom: 20px;
-    width: 265px;
+    width: 84%;
   }
 
   .footer__img {
     margin-bottom: 31px;
-    width: 320px;
-    height: 250px;
   }
 
   .footer__mail {
     margin-right: 0;
     margin-bottom: 19px;
     padding-left: 50px;
-    width: 320px;
+    width: 100%;
     line-height: 22px;
     text-align: center;
 
@@ -178,7 +175,7 @@
 
   .footer__phone {
     padding-left: 28px;
-    width: 320px;
+    width: 100%;
     line-height: 32px;
     text-align: center;
 

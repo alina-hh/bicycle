@@ -1,5 +1,5 @@
 .offer-help {
-  width: 327px;
+  width: 37.5%;
 }
 
 .offer-help__desc {
@@ -22,7 +22,7 @@
   padding-top: 14px;
   padding-bottom: 10px;
   padding-left: 30px;
-  width: 327px;
+  width: 100%;
   min-height: 48px;
 
   background-color: $white;
@@ -46,8 +46,9 @@
 }
 
 .offer-help__button {
+  display: block;
   margin: 0 auto;
-  width: 325px;
+  width: 100%;
   min-height: 51px;
   font-weight: 600;
   font-size: 15px;
@@ -73,10 +74,10 @@
   }
 
   .offer-help__wrapper {
-    margin: 0 auto;
+    @include container-tablet;
     padding-top: 70px;
     padding-bottom: 35px;
-    width: 324px;
+    width: 43%;
   }
 
   .offer-help__desc {
@@ -87,22 +88,26 @@
   }
 
   .offer-help__form-wrapper input {
+    margin: 0 auto;
     margin-bottom: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 21px;
-    width: 321px;
+    width: 97%;
     border-radius: 6px;
   }
 
   .offer-help__button {
-    width: 321px;
+    width: 97%;
   }
 }
 
 @media (max-width: $tablet-width) {
   .offer-help__wrapper {
-    width: 288px;
+    @include container-mobile;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    width: 100%;
   }
 
   .offer-help__desc {
@@ -110,14 +115,15 @@
   }
 
   .offer-help__form-wrapper input {
+
     padding-top: 13px;
     padding-bottom: 11px;
     padding-left: 26px;
-    width: 288px;
+    width: 90%;
     border-radius: 4px;
   }
 
   .offer-help__button {
-    width: 288px;
+    width: 90%;
   }
 }
