@@ -28,21 +28,21 @@
   background-color: $white;
   border: 1px solid $grey;
   border-radius: 4px;
-}
 
-.offer-help__form-wrapper input::placeholder {
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: $dark-iron;
-  opacity: 0.5;
-}
+  &::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $dark-iron;
+    opacity: 0.5;
+  }
 
-.offer-help__form-wrapper input:hover::placeholder,
-.offer-help__form-wrapper input:focus,
-.offer-help__form-wrapper input:focus::placeholder {
-  opacity: 1;
-  outline: none;
+  &:hover::placeholder,
+  :focus,
+  :focus::placeholder {
+    opacity: 1;
+    outline: none;
+  }
 }
 
 .offer-help__button {

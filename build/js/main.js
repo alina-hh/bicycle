@@ -13,3 +13,10 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('nav--opened');
   }
 });
+
+document.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    pageHeader.classList.remove('nav--opened');
+    pageHeader.classList.add('nav--closed');
+  }
+});

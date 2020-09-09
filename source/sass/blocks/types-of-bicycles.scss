@@ -1,4 +1,4 @@
-.types-of-bisycles {
+.types-of-bicycles {
   background-color: $light-grey;
 }
 
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.types-of-bisycles__list {
+.types-of-bicycles__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@
   padding-left: 30px;
 }
 
-.types-of-bisycles__item {
+.types-of-bicycles__item {
   position: relative;
   margin-right: 43px;
   margin-bottom: 10px;
@@ -97,13 +97,13 @@
   }
 }
 
-.types-of-bisycles__item img {
+.types-of-bicycles__item img {
   display: block;
   margin-bottom: 20px;
   width: 100%;
 }
 
-.types-of-bisycles__item h3 {
+.types-of-bicycles__item h3 {
   margin: 0;
   width: 100%;
   font-weight: 600;
@@ -128,13 +128,13 @@
     line-height: 41px;
   }
 
-  .types-of-bisycles__list {
+  .types-of-bicycles__list {
     justify-content: center;
     padding: 0;
     width: 100%;
   }
 
-  .types-of-bisycles__item {
+  .types-of-bicycles__item {
     margin-right: 50px;
     margin-bottom: 50px;
     width: 45.5%;
@@ -176,12 +176,12 @@
     }
   }
 
-  .types-of-bisycles__item img {
+  .types-of-bicycles__item img {
     margin-bottom: 22px;
     width: 100%;
   }
 
-  .types-of-bisycles__item h3 {
+  .types-of-bicycles__item h3 {
     margin: 0 auto;
     width: 100%;
   }
@@ -200,12 +200,12 @@
     width: 100%;
   }
 
-  .types-of-bisycles__list {
+  .types-of-bicycles__list {
     padding: 0;
     width: 100%;
   }
 
-  .types-of-bisycles__item {
+  .types-of-bicycles__item {
     margin-right: 0;
     margin-bottom: 40px;
     width: 100%;
@@ -236,7 +236,7 @@
     }
   }
 
-  .types-of-bisycles__item img {
+  .types-of-bicycles__item img {
     margin-bottom: 20px;
   }
 }
