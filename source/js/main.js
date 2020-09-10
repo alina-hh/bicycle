@@ -2,7 +2,7 @@
 var pageHeader = document.querySelector('.nav');
 var headerToggle = document.querySelector('.nav__toggle');
 
-if (pageHeader) {
+if (pageHeader && headerToggle) {
   pageHeader.classList.remove('nav--no-js');
 
   headerToggle.addEventListener('click', function () {
