@@ -1,5 +1,6 @@
 .promo {
   @include container;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -7,6 +8,25 @@
   padding-top: 260px;
   padding-left: 171px;
   padding-right: 171px;
+  z-index: 1;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1222px;
+    height: 825px;
+    background-image: url("../img/desktop-back.png");
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: $onyx;
+    overflow: hidden;
+    z-index: -10;
+  }
 }
 
 @media (max-width: $desktop-width) {
@@ -16,5 +36,22 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+
+    &::after {
+      top: -52px;
+      width: 767px;
+      height: 340px;
+      background-image: url("../img/tablet-back.png");
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    &::after {
+      width: 319px;
+      height: 390px;
+      background-image: url("../img/mobile-back.png");
+    }
   }
 }

@@ -1,6 +1,7 @@
 .header__wrapper {
   @include container;
   position: relative;
+  z-index: 10;
 }
 
 .header__logo {
