@@ -197,6 +197,19 @@
     width: 100%;
   }
 
+  .nav--opened .nav__toggle {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+
+  .nav--opened .nav__list {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
   .nav--no-js .nav__list {
     width: 100%;
     min-height: 300px;

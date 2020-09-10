@@ -1,0 +1,11 @@
+.top-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $onyx;
+  width: 100vw;
+  height: 825px;
+  z-index: -100;
+  overflow-x: hidden;
+}
