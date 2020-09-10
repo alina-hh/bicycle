@@ -75,7 +75,7 @@
 @media (max-width: $desktop-width) {
   .about-us__wrapper {
     @include container-tablet;
-    padding-top: 35px;
+    padding-top: 39px;
     padding-bottom: 26px;
     padding-left: 106px;
     padding-right: 106px;
@@ -100,7 +100,7 @@
 @media (max-width: $tablet-width) {
   .about-us__wrapper {
     @include container-mobile;
-    padding-top: 35px;
+    padding-top: 37px;
     padding-bottom: 70px;
     padding-left: 14px;
     padding-right: 14px;
