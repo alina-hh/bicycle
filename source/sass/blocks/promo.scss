@@ -21,7 +21,7 @@
     height: 825px;
     background-image: url("../img/desktop-back.png");
     background-position: top center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: $onyx;
     overflow: hidden;
@@ -42,6 +42,7 @@
       width: 767px;
       height: 340px;
       background-image: url("../img/tablet-back.png");
+      background-size: contain;
     }
   }
 }
