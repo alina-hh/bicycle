@@ -42,6 +42,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 957px;
 }
 
 .footer__mail,
@@ -70,9 +71,8 @@
 }
 
 .footer__mail {
-  margin-right: 90px;
   padding-left: 41px;
-  width: 28%;
+  width: 38%;
 
   &::before {
     content: url("../img/mail-icon.svg");
@@ -119,8 +119,14 @@
     margin-bottom: 16px;
   }
 
+  .footer__wrapper-contacts {
+    justify-content: center;
+    width: 100%;
+  }
+
   .footer__mail {
-    width: 39%;
+    margin-left: 30px;
+    width: 50%;
 
     &::before {
       left: 0;
@@ -128,7 +134,7 @@
   }
 
   .footer__phone {
-    width: 28%;
+    width: 34%;
 
     &::before {
       left: 0;
@@ -157,10 +163,6 @@
 
   .footer__img {
     margin-bottom: 31px;
-  }
-
-  .footer__wrapper-contacts {
-    width: 100%;
   }
 
   .footer__mail {
